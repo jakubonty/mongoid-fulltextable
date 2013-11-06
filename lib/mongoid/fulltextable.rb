@@ -13,7 +13,7 @@ module Mongoid
 
       field :_keywords, :type => Array
 
-      index :_keywords
+      index _keywords: 1
 
       scope :fulltext, lambda { |str| where(:_keywords => /#{Regexp.escape(str)}/i) }
 
