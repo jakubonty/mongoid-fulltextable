@@ -11,7 +11,7 @@ module Mongoid
 
     included do
 
-      field :_keywords, :type => Array, :accessible => false
+      field :_keywords, :type => Array
 
       index :_keywords
 
